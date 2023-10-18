@@ -1,6 +1,6 @@
 
 
-var response = fetch("https://raw.githubusercontent.com/Coding4ever123/Sanikal/main/settings.html?token=GHSAT0AAAAAACJCNM7RBT4PYXNRSWPAC5TQZJQBDEA")
+var response = fetch("https://raw.githubusercontent.com/Coding4ever123/Sanikal/main/settings.html")
 
 var links = JSON.parse(response)
 let hash = location.hash;
