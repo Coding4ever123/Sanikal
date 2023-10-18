@@ -7,7 +7,7 @@ function httpGet(theUrl)
     return xmlHttp.responseText;
 }
 //
-var links = JSON.parse(httpGet("https://raw.githubusercontent.com/Coding4ever123/Sanikal/main/settings.json?token=GHSAT0AAAAAACJCNM7QJ64FRO2MCFJQHPYQZJQAZ3Q"))
+var links = JSON.parse(httpGet("https://raw.githubusercontent.com/Coding4ever123/Sanikal/main/settings.html?token=GHSAT0AAAAAACJCNM7Q2SLTN5XOU63FAWIWZJQA7ZA"))
 let hash = location.hash;
 console.log(location.hash)
 function Onreload(){
