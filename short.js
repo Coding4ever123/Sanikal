@@ -7,7 +7,9 @@ function httpGet(theUrl)
     return xmlHttp.responseText;
 }
 //
-var links = JSON.parse(httpGet("https://raw.githubusercontent.com/Coding4ever123/Sanikal/main/settings.html?token=GHSAT0AAAAAACJCNM7Q2SLTN5XOU63FAWIWZJQA7ZA"))
+var response = fetch("https://jsonplaceholder.typicode.com/posts/1")
+
+var links = JSON.parse(response)
 let hash = location.hash;
 console.log(location.hash)
 function Onreload(){
