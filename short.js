@@ -7,7 +7,7 @@ function httpGet(theUrl)
     return xmlHttp.responseText;
 }
 //
-var response = fetch("https://jsonplaceholder.typicode.com/posts/1")
+var response = fetch("https://raw.githubusercontent.com/Coding4ever123/Sanikal/main/settings.html?token=GHSAT0AAAAAACJCNM7RBT4PYXNRSWPAC5TQZJQBDEA")
 
 var links = JSON.parse(response)
 let hash = location.hash;
