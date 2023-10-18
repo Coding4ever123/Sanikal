@@ -1,9 +1,13 @@
-const links={
-	"#FM": "sanikal-fuer-mich/",
-	"#BG": "badgalerie/",
-	"#MH": "news/sanikal-messe-hotel-2023-bozen/"
 
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
 }
+//
+var links = JSON.parse(httpGet("https://raw.githubusercontent.com/Coding4ever123/Sanikal/main/settings.json?token=GHSAT0AAAAAACJCNM7QJ64FRO2MCFJQHPYQZJQAZ3Q"))
 let hash = location.hash;
 console.log(location.hash)
 function Onreload(){
